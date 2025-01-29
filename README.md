@@ -11,7 +11,7 @@ While my immediate thought was that I could keep track of matching characters as
 I stored the first word in a variable, then used a for loop inside a while loop to test each word's letter at position currentLetter against firstWord's corresponding letter. I believe this is the quickest way I could identify a mismatch.
 
 ## Complexity:
-This algorithm's complexity is dependent on two independent variables: length of the strs, and length of strs[0]. Thus, it does not fall clearly into the linear or quadratic complexity categories.
+This algorithm's complexity is essentially O(N*M). It is dependent on two independent variables: length of the strs, and length of strs[0]. Thus, it does not fall clearly into the linear or quadratic complexity categories.
 the best classification is:
 - O(NM) → Linear in terms of both N (number of words) and M (prefix length).
 - If M is considered a constant upper bound (the LeetCode description specifies 0 <= strs[i].length <= 200), then it simplifies to O(N).
